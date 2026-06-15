@@ -1,0 +1,6 @@
+streamlit
+vaderSentiment
+textblob
+pandas
+plotly
+nltk
