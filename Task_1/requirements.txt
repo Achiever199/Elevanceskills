@@ -1,0 +1,16 @@
+chromadb==0.5.23
+onnxruntime==1.19.2
+APScheduler==3.10.4
+requests==2.32.3
+beautifulsoup4==4.12.3
+feedparser==6.0.11
+pypdf==5.1.0
+PyYAML==6.0.2
+anthropic==0.40.0
+python-dotenv==1.0.1
+tenacity==9.0.0
+
+# Optional: uncomment for higher-quality embeddings via sentence-transformers
+# (pulls in torch, ~2GB). Also set vector_store.embedding_provider:
+# "sentence_transformers" in config.yaml if you enable this.
+# sentence-transformers==3.3.1

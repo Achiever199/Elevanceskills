@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  knowledge-base:
+    build: .
+    container_name: kb_system
+    restart: unless-stopped
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - ANONYMIZED_TELEMETRY=False
+    volumes:
+      - ./data:/app/data          # persist vector DB + manifest across restarts
+      - ./logs:/app/logs
+      - ./config.yaml:/app/config.yaml
+      - ./sample_docs:/app/sample_docs
+    command: ["python", "main.py", "serve"]

@@ -1,0 +1,57 @@
+# ==============================================================================
+# Knowledge Base Configuration
+# ==============================================================================
+
+vector_store:
+  persist_directory: "./data/chroma"
+  collection_name: "knowledge_base"
+  embedding_provider: "default"         # "default" (lightweight ONNX, no torch) | "sentence_transformers"
+  embedding_model: "all-MiniLM-L6-v2"   # only used when embedding_provider is "sentence_transformers"
+
+chunking:
+  chunk_size: 1000        # characters per chunk
+  chunk_overlap: 150      # overlap between consecutive chunks
+
+manifest:
+  path: "./data/manifest.sqlite3"   # tracks content hashes to avoid re-embedding unchanged data
+
+logging:
+  level: "INFO"
+  file: "./logs/kb_system.log"
+
+# ------------------------------------------------------------------------------
+# Sources: each has a unique id, a type (web | file | rss), type-specific
+# options, and an update schedule (interval in minutes, OR a cron expression).
+# ------------------------------------------------------------------------------
+sources:
+  - id: "docs_folder"
+    type: "file"
+    enabled: true
+    options:
+      path: "./sample_docs"
+      extensions: [".txt", ".md", ".pdf"]
+      recursive: true
+    schedule:
+      type: "interval"
+      minutes: 60
+
+  - id: "anthropic_news"
+    type: "web"
+    enabled: true
+    options:
+      urls:
+        - "https://www.anthropic.com/news"
+    schedule:
+      type: "interval"
+      minutes: 360
+
+  - id: "example_rss"
+    type: "rss"
+    enabled: false
+    options:
+      feed_urls:
+        - "https://example.com/feed.xml"
+    schedule:
+      type: "cron"
+      hour: 6
+      minute: 0

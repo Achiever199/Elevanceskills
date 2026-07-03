@@ -1,0 +1,16 @@
+2026-07-04 00:52:50,097 | INFO     | kb_system | [docs_folder] loaded 1 file(s) from ./sample_docs
+2026-07-04 00:55:26,545 | INFO     | kb_system | [docs_folder] update complete: new=1 updated=0 unchanged=0 removed=0 errors=0 (156.45s)
+2026-07-04 00:55:33,221 | INFO     | kb_system | [anthropic_news] loaded 1 page(s)
+2026-07-04 00:55:33,278 | INFO     | kb_system | [anthropic_news] update complete: new=1 updated=0 unchanged=0 removed=0 errors=0 (6.73s)
+2026-07-04 00:56:45,243 | INFO     | kb_system | Scheduled source 'docs_folder' with trigger interval[1:00:00]
+2026-07-04 00:56:45,243 | INFO     | kb_system | Scheduled source 'anthropic_news' with trigger interval[6:00:00]
+2026-07-04 00:56:45,244 | INFO     | kb_system | Running initial update pass for all sources before entering scheduled mode...
+2026-07-04 00:56:45,244 | INFO     | kb_system | [docs_folder] loaded 1 file(s) from ./sample_docs
+2026-07-04 00:56:45,244 | INFO     | kb_system | [docs_folder] update complete: new=0 updated=0 unchanged=1 removed=0 errors=0 (0.00s)
+2026-07-04 00:56:48,898 | INFO     | kb_system | [anthropic_news] loaded 1 page(s)
+2026-07-04 00:56:48,899 | INFO     | kb_system | [anthropic_news] update complete: new=0 updated=0 unchanged=1 removed=0 errors=0 (3.65s)
+2026-07-04 00:56:48,899 | INFO     | kb_system | Knowledge base service is running. Press Ctrl+C to stop.
+2026-07-04 00:58:26,331 | INFO     | kb_system | Shutdown signal received.
+2026-07-04 00:58:26,915 | INFO     | kb_system | Service stopped.
+2026-07-04 00:58:29,799 | INFO     | kb_system | [docs_folder] loaded 1 file(s) from ./sample_docs
+2026-07-04 00:58:29,799 | INFO     | kb_system | [docs_folder] update complete: new=0 updated=0 unchanged=1 removed=0 errors=0 (0.00s)
