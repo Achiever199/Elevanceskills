@@ -1,6 +1,6 @@
 # 🌍 Multilingual Conversational Chatbot
 
-> **Internship Project — inAmigos Foundation | AI Data Analyst Intern**
+> **Internship Project — Elevance skills **
 > Task 6 | Built by [Akash Sikarwar](https://github.com/Achiever199)
 
 ---
