@@ -1,6 +1,7 @@
 # 🤖 Multimodal AI Assistant — Text + Vision (Gemini Edition)
-> **Internship Project — inAmigos Foundation | AI Data Analyst Intern**
+> **Internship Project**
 > Task 2 | Built by [Akash Sikarwar](https://github.com/Achiever199)
+> Live Preview:**https://task2appdo.streamlit.app/**
 
 This is a drop-in replacement for the original Anthropic-powered assistant.
 It uses **Google Gemini's free API tier** instead, so no Anthropic API key
