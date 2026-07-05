@@ -171,5 +171,4 @@ streamlit run app.py
 
 **Akash Sikarwar**
 🎓 B.Tech Information Technology — MMMUT Gorakhpur (2024–2028)
-💼 AI Data Analyst Intern — inAmigos Foundation
 🐙 GitHub: [@Achiever199](https://github.com/Achiever199)
